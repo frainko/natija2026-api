@@ -223,10 +223,6 @@ if __name__ == '__main__':
         host='0.0.0.0',
         port=port,
         debug=False
-    )    status = db.Column(db.String(20))
-    year = db.Column(db.String(10))
-    governorate = db.Column(db.String(100))
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
     def to_dict(self):
         return {
